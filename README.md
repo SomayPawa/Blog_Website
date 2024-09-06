@@ -33,6 +33,8 @@ This is a blog website built with React for the frontend and Express.js for the 
 1. Navigate to the backend directory:
    ```bash
    cd backend
+![image](https://github.com/user-attachments/assets/b578647c-ed0f-4470-8d71-d4b0c3275390)
+
 ![image](https://github.com/user-attachments/assets/d8526425-2c41-4527-afd2-9e00c0aaccd7)
 
 ![image](https://github.com/user-attachments/assets/a4e13adf-1c4c-4aa6-9a21-f061ce3c483f)
