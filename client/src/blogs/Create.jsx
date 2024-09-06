@@ -23,7 +23,7 @@ const Create = () => {
     e.preventDefault();
     const { title, content, tags } = data;
     try {
-      const response = await axios.post('http://localhost:8000/blog', {
+       const response = await axios.post('https://blog-website-slp.vercel.app/blog', {
         title,
         content,
         tags
