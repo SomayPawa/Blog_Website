@@ -27,7 +27,7 @@ const Register = () => {
     const {name,email,password} = data; // data se name ,email,password le liyaaa
     try{
       console.log(name,email,password);
-      const {data} = await axios.post('http://localhost:8000/register',{
+       const { data: response } = await axios.post('https://blog-website-slp.vercel.app/register', {
           name,email,password
       })
       if(data.error){
