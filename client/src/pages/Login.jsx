@@ -22,7 +22,7 @@ const Login = () => {
     const {email,password} = data; // data se name ,email,password le liyaaa
 
     try{
-      const {data} = await axios.post('http://localhost:8000/login',{
+       const { data: response } = await axios.post('https://blog-website-slp.vercel.app/login', {
         email,password
       })
 
