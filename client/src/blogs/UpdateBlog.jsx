@@ -34,7 +34,7 @@ const UpdateBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:8000/blogs/${id}`, {
+       const response = await axios.get(`https://blog-website-slp.vercel.app/blogs/${id}`);
         title: formData.title,
         content: formData.content,
         tags: formData.tags, 
