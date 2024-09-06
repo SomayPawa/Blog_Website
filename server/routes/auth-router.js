@@ -7,11 +7,19 @@ const cors = require("cors");
 
 // middleware
 router.use(
-    cors({
-        credentials:true,
-        origin:"http://localhost:5173",
-    })
-)
+  cors({
+    credentials: true,
+    origin: (origin, callback) => {
+      const allowedOrigins = ['http://localhost:5173', 'https://deploy-mern-1whq.vercel.app'];
+      if (allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    }
+  })
+);
+
 router.post("/register",userRegister);
 router.post("/login",userLogin);
 router.post("/blog",blogCreate);
