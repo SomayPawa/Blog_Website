@@ -1,5 +1,9 @@
 # Blog Website
 
+About
+
+I am creating a MERN stack website using React for the frontend, Express.js for the backend, and MongoDB as the database. This website is very user-friendly.
+
 ## Overview
 
 This is a blog website built with React for the frontend and Express.js for the backend. The project includes functionalities for user authentication (login and register) and CRUD operations for blog posts.
