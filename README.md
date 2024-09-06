@@ -41,5 +41,6 @@ This is a blog website built with React for the frontend and Express.js for the 
 
 ![image](https://github.com/user-attachments/assets/888a1558-8c66-436b-b0bb-4708649b90e6)
 
+![image](https://github.com/user-attachments/assets/f6559807-3c31-479c-9344-059d683ccffc)
 
 ![image](https://github.com/user-attachments/assets/a4e13adf-1c4c-4aa6-9a21-f061ce3c483f)
