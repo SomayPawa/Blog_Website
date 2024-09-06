@@ -1,0 +1,78 @@
+.create-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #e2dada;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .create-container h1 {
+    text-align: center;
+    color: #0c0a0a;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .create-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #f7f5f5;
+    font-weight: 500;
+  }
+  
+  .create-form input[type="text"],
+  .create-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .create-form input[type="text"]:focus,
+  .create-form textarea:focus {
+    border-color: #191419;
+  }
+  
+  .create-form textarea {
+    min-height: 150px;
+    resize: vertical; /* Allow vertical resizing only */
+  }
+  
+  .create-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #7a5a81;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .create-form button:hover {
+    background-color: #ADB9E3;
+    transform: translateY(-2px);
+  }
+  
+  .create-form button:active {
+    background-color: #9479ab;
+    transform: translateY(0);
+  }
+  
+  /* Specific Styles */
+  .create-form input#title {
+    font-weight: bold;
+  }
+  
+  .create-form button#create-submit {
+    background-color: #605560;
+  }
+  

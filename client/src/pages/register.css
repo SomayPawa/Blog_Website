@@ -1,0 +1,85 @@
+/* Register.css */
+
+/* Page background styling */
+body {
+    background-color: #fffeff; /* Main background color */
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Form styling */
+  form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #8d3535;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input styling */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #814545;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #0c1211; /* Accent color for focus */
+    outline: none;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    background-color: #bdd6d6; /* Main button color */
+    color: #160c0c;
+    padding: 14px 20px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #232020;
+    color: #d8d4db; /* Text color change on hover */
+    border: 1px solid #A379C9; /* Border on hover */
+  }
+  
+  form::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    form {
+      padding: 15px;
+    }
+  
+    button,
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      font-size: 14px;
+    }
+  }
+  
