@@ -1,4 +1,3 @@
-// UpdateBlog.jsx
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
@@ -8,24 +7,24 @@ const UpdateBlog = () => {
   const navigate = useNavigate(); // Hook to programmatically navigate
   const [formData, setFormData] = useState({ title: '', content: '', tags: '' });
 
-//   useEffect(() => {
-//     // Fetch the blog details to populate the form
-//     const fetchBlog = async () => {
-//       try {
-//         const response = await axios.get(`http://localhost:8000/blogs/${id}`);
-//         const blog = response.data;
-//         setFormData({
-//           title: blog.title,
-//           content: blog.content,
-//           tags: blog.tags
-//         });
-//       } catch (error) {
-//         console.error('Error fetching blog:', error);
-//       }
-//     };
+  useEffect(() => {
+    // Fetch the blog details to populate the form
+    const fetchBlog = async () => {
+      try {
+        const response = await axios.get(`https://blog-website-slp.vercel.app/blogs/${id}`);
+        const blog = response.data;
+        setFormData({
+          title: blog.title,
+          content: blog.content,
+          tags: blog.tags
+        });
+      } catch (error) {
+        console.error('Error fetching blog:', error);
+      }
+    };
 
-//     fetchBlog();
-//   }, [id]);
+    fetchBlog();
+  }, [id]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -34,10 +33,11 @@ const UpdateBlog = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-       const response = await axios.get(`https://blog-website-slp.vercel.app/blogs/${id}`);
+      // Send the updated data to the backend
+      await axios.put(`https://blog-website-slp.vercel.app/blogs/${id}`, {
         title: formData.title,
         content: formData.content,
-        tags: formData.tags, 
+        tags: formData.tags,
       });
       navigate('/Display'); // Redirect to the home page after updating
     } catch (error) {
